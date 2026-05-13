@@ -1,3 +1,46 @@
-body{
+*{
+    margin: 0;
+    padding: 0;
+    border: 0 ;
+    box-sizing: border-box;
+}
+.box{
+    width: 100%;
+
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background: url(../img/fon.png);
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+  
+}
+.header_box{
+    width: 75%;
+    margin-top: 50px;
     background: red;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box_item{
+    width: 40%;
+    height: 27px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    height: 24px;
+}
+.box_item a{
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
 }
