@@ -10,17 +10,17 @@
 }
 header{
     width: 100%;
-    height: 100vh;
-    background: url(../img/imgmain.jpg);
-    background-size: 100% 100%;
+    height: 850px;
     display: flex;
     justify-content: center;
+      background: url(../img/fon.png);
+      background-size: 100% 100%;
   
 }
 .header_box{
     width: 75%;
+    height: 700px;
     margin-top: 50px;
-    background: red;
 }
 nav{
     width: 100%;
@@ -34,6 +34,7 @@ nav{
     height: 27px;
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
 }
 .logo{
     height: 24px;
@@ -43,4 +44,79 @@ nav{
     color: white;
     text-decoration: none;
     font-size: 18px;
+}
+.search{
+    width: 40px;
+    height: 40px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.header_info{
+    width: 50%;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.header_welcome{
+   font-size: 25px;
+    color: white;  
+
+}
+.header_title{
+    font-size: 50px;
+    color: white;
+
+
+}
+.header_text{
+    font-size: 15px;
+    color: white;
+
+}
+.button_header_one{
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 40px;
+
+    border-radius: 100px;
+    cursor: pointer;
+}
+.section_header_block{
+    width: 100%;
+    height: 200px;
+    background: #E2D9C8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 7%;
+}
+.section_header_block_item{
+    width: 100px;
+    height: 125px;
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.Coffee_img{
+    height: 63px;
+}
+.h2_coffee{
+    font-size: 18px;
+    color: #544A3E;
+}
+main{
+    width: 100%;
+    height: 850px;
+}
+.h1_main{
+    margin-top: 50px;
+    text-align: center;
+    color: #30261C;
 }
