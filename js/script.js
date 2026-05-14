@@ -36,3 +36,19 @@ containers.forEach(container => {
     // Оновлення при зміні розміру вікна для кожного слайдера
     window.addEventListener('resize', updateSlider);
 });
+const dots = document.querySelectorAll('.dot');
+const cards = document.querySelectorAll('.review-card');
+
+dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+        // Знімаємо активний клас зі всіх
+        dots.forEach(d => d.classList.remove('active'));
+        cards.forEach(c => c.classList.remove('active'));
+
+        // Додаємо активний клас вибраному
+        dot.classList.add('active');
+        cards[index].classList.add('active');
+        
+        // Тут можна додати логіку зміщення (translateX) для справжнього слайдера
+    });
+});
