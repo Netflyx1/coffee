@@ -3,62 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Coffee Shop</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="box">
-      <header>
-        <div class="header_box">
-            <nav>
-                <img class="logo" src="img/Coffea.png" alt="">
-                <div class="box_item">
-                    <a href="">home</a>
-                    <a href="">coffee</a>
-                    <a href="">bakery</a>
-                    <a href="">shop</a>
-                    <a href="">about</a>
-                    <a href="">login</a>
+        <header>
+            <div class="header_box">
+                <nav>
+                    <img class="logo" src="img/Coffea.png" alt="Logo">
+                    <div class="box_item">
+                        <a href="#">home</a>
+                        <a href="#">coffee</a>
+                        <a href="#">bakery</a>
+                        <a href="#">shop</a>
+                        <a href="#">about</a>
+                        <a href="#">login</a>
+                    </div>
+                    <img class="search" src="img/Group 7.png" alt="Search">
+                </nav>
+                <div class="header_info">
+                    <p class="header_welcome">Welcome</p>
+                    <h1 class="header_title">We serve the <br> richest coffee in <br> the city!</h1>
+                    <p class="header_text">Lorem ipsum dolor sit amet, consectetur adipisicing <br> elit, sed do eiusmod tempor</p>
+                    <button class="button_header_one">Order Now</button>
                 </div>
-                <img class="search" src="img/Group 7.png" alt="">
-            </nav>
-            <div class="header_info">
-                <p class="header_welcome">Welcome</p>
-                <h1 class="header_title">We serve the <br> richest coffee in <br> the city!</h1>
-                <p class="header_text">Lorem ipsum dolor sit amet, consectetur adipisicing <br> elit, sed do eiusmod tempor</p>
-                <button class="button_header_one">Order Now</button>
             </div>
-        </div>
-      </header>
-      <section class="section_header_block">
+        </header>
+
+        <section class="section_header_block">
             <div class="section_header_block_item">
                 <img class="Coffee_img" src="img/Vector.png" alt="">
                 <h2 class="h2_coffee">Hot Coffee</h2>
-                
             </div>
             <div class="section_header_block_item">
                 <img class="Coffee_img" src="img/Vector2.png" alt="">
                 <h2 class="h2_coffee">Cold Coffee</h2>
-               
             </div>
             <div class="section_header_block_item">
                 <img class="Coffee_img" src="img/Vector3.png" alt="">
                 <h2 class="h2_coffee">Cup Coffee</h2>
-                
             </div>
             <div class="section_header_block_item">
                 <img class="Coffee_img" src="img/Vector4.png" alt="">
-                <h2  class="h2_coffee">Dessert</h2>
-                
+                <h2 class="h2_coffee">Dessert</h2>
             </div>
-      </section>
+        </section>
 
-      <main>
-        <h1 class="h1_main">OUR SPECIAL COFFEE</h1>
+       <main>
+            <h1 class="h1_main">OUR SPECIAL COFFEE</h1>
+            
+            <div class="slider-container">
+                <!-- Стрілки тепер зафіксовані через absolute -->
+                <button class="prev-btn">←</button>
+                
+                <div class="slider-wrapper">
+                    <div class="main_box">
+                        <!-- Картки (додай стільки, скільки хочеш для анімації) -->
+                        <div class="main_box_item">
+                            <img class="main_img" src="img/coffee1.jpg" alt="">
+                            <h2 class="h2_main">Lungo coffee</h2>
+                            <p class="p_main">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                            <div class="card-footer">
+                                <p class="p_main2">Rs. 200</p>
+                                <button class="button_main_one">Order Now</button>
+                            </div>
+                        </div>
 
-        
-      </main>
+                        <div class="main_box_item">
+                            <img class="main_img" src="img/coffee2.jpg" alt="">
+                            <h2 class="h2_main">Lungo coffee</h2>
+                            <p class="p_main">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                            <div class="card-footer">
+                                <p class="p_main2">Rs. 200</p>
+                                <button class="button_main_one">Order Now</button>
+                            </div>
+                        </div>
 
+                        <div class="main_box_item">
+                            <img class="main_img" src="img/coffee3.jpg" alt="">
+                            <h2 class="h2_main">Lungo coffee</h2>
+                            <p class="p_main">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                            <div class="card-footer">
+                                <p class="p_main2">Rs. 200</p>
+                                <button class="button_main_one">Order Now</button>
+                            </div>
+                        </div>
+
+                        <div class="main_box_item">
+                            <img class="main_img" src="img/coffee4.jpg" alt="">
+                            <h2 class="h2_main">Lungo coffee</h2>
+                            <p class="p_main">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                            <div class="card-footer">
+                                <p class="p_main2">Rs. 200</p>
+                                <button class="button_main_one">Order Now</button>
+                            </div>
+                        </div>
+
+                        <div class="main_box_item">
+                            <img class="main_img" src="img/coffee1.jpg" alt="">
+                            <h2 class="h2_main">Lungo coffee</h2>
+                            <p class="p_main">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                            <div class="card-footer">
+                                <p class="p_main2">Rs. 200</p>
+                                <button class="button_main_one">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="next-btn">→</button>
+            </div>
+            <h1 class="h1_main2">OUR SPECIAL DESERT</h1>
+
+            <div class="slider-container">
+                <!-- Стрілки тепер зафіксовані через absolute -->
+                <button class="prev-btn">←</button>
+                
+                <div class="slider-wrapper">
+                    <div class="main_box">
+                        <!-- Картки (додай стільки, скільки хочеш для анімації) -->
+                        <div class="main_box_item">
+                            <img class="main_img" src="img/c1.jpg" alt="">
+                            <h2 class="h2_main">Lungo coffee</h2>
+                            <p class="p_main">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                            <div class="card-footer">
+                                <p class="p_main2">Rs. 200</p>
+                                <button class="button_main_one">Order Now</button>
+                            </div>
+                        </div>
+
+                        <div class="main_box_item">
+                            <img class="main_img" src="img/c2.jpg" alt="">
+                            <h2 class="h2_main">Lungo coffee</h2>
+                            <p class="p_main">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                            <div class="card-footer">
+                                <p class="p_main2">Rs. 200</p>
+                                <button class="button_main_one">Order Now</button>
+                            </div>
+                        </div>
+
+                        <div class="main_box_item">
+                            <img class="main_img" src="img/c3.jpg" alt="">
+                            <h2 class="h2_main">Lungo coffee</h2>
+                            <p class="p_main">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                            <div class="card-footer">
+                                <p class="p_main2">Rs. 200</p>
+                                <button class="button_main_one">Order Now</button>
+                            </div>
+                        </div>
+
+                        <div class="main_box_item">
+                            <img class="main_img" src="img/c4.jpg" alt="">
+                            <h2 class="h2_main">Lungo coffee</h2>
+                            <p class="p_main">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                            <div class="card-footer">
+                                <p class="p_main2">Rs. 200</p>
+                                <button class="button_main_one">Order Now</button>
+                            </div>
+                        </div>
+
+                        <div class="main_box_item">
+                            <img class="main_img" src="img/coffee1.jpg" alt="">
+                            <h2 class="h2_main">Lungo coffee</h2>
+                            <p class="p_main">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                            <div class="card-footer">
+                                <p class="p_main2">Rs. 200</p>
+                                <button class="button_main_one">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="next-btn">→</button>
+            </div>
+        </main>
+        <section class="section_check">
+            <img class="img_check" src="img/cacao1.png" alt="">
+            <div class="container_text">
+                <h1 class="h1_check">Check Out Our Best <br> Coffee Beans</h1>
+            <button class="button_Check">Explore Out Products >></button>
+            </div>
+            <img class="img_check2" src="img/cacao2.png" alt="">
+        </section>
     </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
