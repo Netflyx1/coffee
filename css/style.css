@@ -87,70 +87,74 @@ nav {
 .Coffee_img { height: 60px; }
 .h2_coffee { font-size: 18px; color: #544A3E; }
 
-/* Слайдер */
 main {
     width: 100%;
-    padding: 80px 0;
+    padding: 60px 0;
 }
 
-.h1_main {
+.h1_main, .h1_main2 {
     text-align: center;
     color: #30261C;
     margin-bottom: 40px;
-    font-size: 40px;
+    font-size: 32px;
+    font-family: 'Serif', Georgia, serif; /* Для елегантності як у кав'ярні */
+    letter-spacing: 2px;
 }
 
 .slider-container {
     position: relative;
-    max-width: 1200px;
+    max-width: 1240px;
     margin: 0 auto;
     display: flex;
     align-items: center;
+    padding: 0 40px; /* Місце для кнопок, щоб вони не заважали */
 }
 
 .slider-wrapper {
     overflow: hidden;
     width: 100%;
-    margin: 0 60px;
 }
 
 .main_box {
     display: flex;
     gap: 20px;
     transition: transform 0.5s ease-out;
-    padding-top: 20px;
+    padding: 20px 0;
 }
 
 .main_box_item {
-    flex: 0 0 calc(25% - 15px);
-    background: #fdfaf7;
-    border-radius: 20px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    flex: 0 0 calc(25% - 15px); /* Рівно 4 картки */
+    background: #ece8df; /* Той самий колір з макета */
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    box-sizing: border-box;
 }
 
 .main_img {
     width: 100%;
-    height: 250px;
+    height: 220px;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 12px;
     margin-bottom: 15px;
 }
 
 .h2_main {
-    font-size: 24px;
-    color: #30261C;
-    margin-bottom: 10px;
+    font-size: 18px;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+    font-weight: bold;
 }
 
 .p_main {
-    font-size: 14px;
+    font-size: 13px;
     color: #666;
     margin-bottom: 20px;
     line-height: 1.4;
+    min-height: 36px; /* Щоб текст був однакової висоти */
 }
 
-/* Футер картки з ціною та кнопкою */
+/* Футер картки */
 .card-footer {
     display: flex;
     justify-content: space-between;
@@ -158,49 +162,65 @@ main {
 }
 
 .p_main2 {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
-    color: #2A0000;
+    color: #000;
 }
 
 .button_main_one {
-    background: #2A0000;
+    background: #2c0b02; /* Темно-коричневий як на макеті */
     color: white;
     border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
+    padding: 8px 15px;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 14px;
-}
-
-/* Стрілки */
-.prev-btn, .next-btn {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: #ede0d4;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    z-index: 5;
+    font-size: 12px;
     transition: 0.3s;
 }
 
-.prev-btn { left: 0; }
-.next-btn { right: 0; }
-.prev-btn:hover, .next-btn:hover { background: #d6c5b5; }
-
-
-
-
-.h1_main2 {
-    text-align: center;
-    color: #30261C;
-    margin-top: 60px;
-    font-size: 40px;
+.button_main_one:hover {
+    background: #4a1608;
 }
 
+/* Стрілки виправлені */
+.prev-btn, .next-btn {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #e4decb; /* Світлий беж */
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 10;
+    transition: 0.3s;
+    top: 50%; /* Центрування по вертикалі */
+    transform: translateY(-50%); /* Точне вирівнювання по центру */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #5d5d5d;
+}
+
+.prev-btn { 
+    left: 0; 
+}
+
+.next-btn { 
+    right: 0; 
+}
+
+.prev-btn:hover, .next-btn:hover { 
+    background: #d6c5b5; 
+    color: #000;
+}
+
+/* Адаптація для планшетів */
+@media (max-width: 1024px) {
+    .main_box_item {
+        flex: 0 0 calc(33.33% - 14px);
+    }
+}
 
 
 .section_check{
@@ -344,4 +364,130 @@ main {
 
 .dot.active {
     background: #333;
+}
+.email_section {
+    width: 100%;
+    height: 300px;
+    background: #E2D9C8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative; /* ВАЖЛИВО: щоб картинки не вилітали за межі секції */
+    overflow: hidden;    /* Щоб зерна не створювали горизонтальну прокрутку */
+}
+
+.cacao3 {
+    width: 400px;
+    height: 300px;
+    position: absolute; /* Виймаємо з потоку, тепер вона не заважає тексту */
+    left: 0;           /* Притискаємо до лівого краю */
+    top: 0;
+}
+
+.cacao4 {
+    width: 400px;
+    height: 300px;
+    position: absolute; /* Виймаємо з потоку */
+    right: 0;          /* Притискаємо до правого краю */
+    bottom: 0;
+}
+
+/* Додамо трохи відступів тексту, щоб він не злипався */
+.h1_email {
+    font-size: 32px;
+    color: #30261C;
+    margin-bottom: 10px;
+}
+
+.p_email {
+    font-size: 16px;
+    color: #30261C;
+    margin-bottom: 20px;
+}
+
+/* Щоб інпут і кнопка були в один рядок, як на макеті */
+.form_container {
+    display: flex;
+    gap: 10px;
+}
+.button_email{
+    width: 138px;
+    height: 44px;
+    border-radius: 100px;
+    color: white;
+    background: #30261C;
+    border: 0;
+    cursor: pointer;
+}
+.email-text{
+    width: 364px;
+    height: 44px;
+    border-radius: 100px;
+    border: 0;
+    color: #30261C;
+    background: #F1F0EE;
+    font-weight: bold;
+}
+.main-footer {
+    background-color: #2b1f16; /* Темно-коричневий фон */
+    color: #ffffff;
+    padding: 60px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around; /* Рівномірний розподіл */
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-col h3 {
+    font-family: 'serif'; /* Для заголовків як на фото */
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #d1d1d1;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+}
+
+/* Логотип */
+.footer-logo {
+    font-family: 'serif';
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+/* Іконки соцмереж */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
 }
